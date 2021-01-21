@@ -1,0 +1,85 @@
+.board{
+    background-color: #202040;/*206a5d*/
+    height: 600px;
+    width: 350px; 
+}
+
+.imgs{
+    width: 40px;
+}
+
+.in-card-img{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+.in-card-joker{
+    margin-top: 90px;
+    margin-bottom: 40px;
+    width: 170px;
+}
+
+.up-cards{
+    background-color: #ec0101;
+    box-shadow: 0 2px 7px #f4f4f2;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+.right-cards{
+    background-color: #010101;/* fe346e aaaaaa ffd082*/
+    box-shadow: 0 2px 7px #eeeded;
+    height: 400px;
+    margin-left: 310px;
+    margin-top: 60px;
+    width: 40px;
+}
+.down-cards{
+    background-color: #ec0101;/*ff6363*/
+    box-shadow: 0 -2px 7px #f6f6f6;
+    height: 40px;
+    margin: 60px auto 0;
+    text-align: center;
+    width: 300px;
+}
+.left-cards{
+    background-color: #010101;/*ff7c7c 110133*/
+    box-shadow: 0 2px 7px #f6f6f6;/*eeeded*/
+    height: 400px;
+    margin-top: -500px;
+    width: 40px;
+}
+
+.red-card{
+    background-color: #ec0101;
+}.black-card{
+    background-color: #010101;
+}
+
+.center-card{
+    box-shadow: 0 0 10px #f4f4f2;
+    color: #f6f6f6;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    height: 500px;
+    position: absolute;
+    margin: -450px 25px;
+    text-align: center;
+    width: 300px;
+}
+
+.close-btn{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: #fff;
+    color: #f5ba13;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
