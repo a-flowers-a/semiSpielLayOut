@@ -69,17 +69,17 @@
     width: 300px;
 }
 
-.close-btn{
+.center-card button {
     position: absolute;
-    right: -10px;
-    top: -10px;
-    background: #fff;
-    color: #f5ba13;
+    right: -15px;
+    top: -18px;
+    background:  #fff;
+    color: #ec0101;
     border: none;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 -2px 7px #f6f6f6;
     cursor: pointer;
     outline: none;
-}
+  }
