@@ -1,7 +1,59 @@
+html, body, #root, .App {
+    height: 100%;
+}
+
+.black-card{
+    background-color: #010101;
+}
+
 .board{
     background-color: #202040;/*206a5d*/
     height: 600px;
     width: 350px; 
+}
+
+.center-card{
+    box-shadow: 0 0 10px #f4f4f2;
+    color: #f6f6f6;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    height: 500px;
+    position: absolute;
+    margin: -450px 25px;
+    text-align: center;
+    width: 300px;
+}
+
+.close-div {
+    background:  #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 -2px 7px #f6f6f6;
+    color: #ec0101;
+    cursor: pointer;
+    font-size: 18px;
+    height: 25px;
+    outline: none;
+    position: absolute;
+    right: -13px;
+    top: -13px;
+    width: 25px;
+}
+
+.close-div:hover{
+font-size: 20px;
+width: 28px;
+height: 28px;
+
+}
+
+.down-cards{
+    background-color: #ec0101;/*ff6363*/
+    box-shadow: 0 -2px 7px #f6f6f6;
+    height: 40px;
+    margin: 60px auto 0;
+    text-align: center;
+    width: 300px;
 }
 
 .imgs{
@@ -19,30 +71,6 @@
     width: 170px;
 }
 
-.up-cards{
-    background-color: #ec0101;
-    box-shadow: 0 2px 7px #f4f4f2;
-    height: 40px;
-    margin: 0 auto;
-    text-align: center;
-    width: 300px;
-}
-.right-cards{
-    background-color: #010101;/* fe346e aaaaaa ffd082*/
-    box-shadow: 0 2px 7px #eeeded;
-    height: 400px;
-    margin-left: 310px;
-    margin-top: 60px;
-    width: 40px;
-}
-.down-cards{
-    background-color: #ec0101;/*ff6363*/
-    box-shadow: 0 -2px 7px #f6f6f6;
-    height: 40px;
-    margin: 60px auto 0;
-    text-align: center;
-    width: 300px;
-}
 .left-cards{
     background-color: #010101;/*ff7c7c 110133*/
     box-shadow: 0 2px 7px #f6f6f6;/*eeeded*/
@@ -53,33 +81,22 @@
 
 .red-card{
     background-color: #ec0101;
-}.black-card{
-    background-color: #010101;
 }
 
-.center-card{
-    box-shadow: 0 0 10px #f4f4f2;
-    color: #f6f6f6;
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    height: 500px;
-    position: absolute;
-    margin: -450px 25px;
+.right-cards{
+    background-color: #010101;/* fe346e aaaaaa ffd082*/
+    box-shadow: 0 2px 7px #eeeded;
+    height: 400px;
+    margin-left: 310px;
+    margin-top: 60px;
+    width: 40px;
+}
+
+.up-cards{
+    background-color: #ec0101;
+    box-shadow: 0 2px 7px #f4f4f2;
+    height: 40px;
+    margin: 0 auto;
     text-align: center;
     width: 300px;
 }
-
-.center-card button {
-    position: absolute;
-    right: -15px;
-    top: -18px;
-    background:  #fff;
-    color: #ec0101;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    box-shadow: 0 -2px 7px #f6f6f6;
-    cursor: pointer;
-    outline: none;
-  }

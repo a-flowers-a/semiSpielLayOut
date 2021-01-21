@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Grid from '@material-ui/core/Grid';
 import InBoardCard from './InBoardCard';
 
 function Board(){
@@ -41,58 +42,67 @@ function Board(){
         });
     }//handleCard
     return(
-        <div className="board">
-            <InBoardCard
-                cardClass="up-cards"
-                clickFunc={()=>{
-                    handleCard(0);
-                }}
-                imgClass="imgs"
-                imgSrc={imgSrcs[0]}
-            />
-            <InBoardCard
-                cardClass="right-cards"
-                clickFunc={()=>{
-                    handleCard(1);
-                }}
-                imgClass="imgs"
-                imgSrc={imgSrcs[1]}
-            />
-            <InBoardCard
-                cardClass="down-cards"
-                clickFunc={()=>{
-                    handleCard(2);
-                }}
-                imgClass="imgs"
-                imgSrc={imgSrcs[2]}
-            />
-            <InBoardCard
-                cardClass="left-cards"
-                clickFunc={()=>{
-                    handleCard(3);
-                }}
-                imgClass="imgs"
-                imgSrc={imgSrcs[3]}
-            />
-            {/*Here goes the card displayed in center*/}
-            {centerCardAtt.show && (
+        <Grid
+            container
+            spacing={0}
+            alignItems="center"
+            justify="center"
+            style={{ minHeight: "100%" }}
+        >
+            <Grid item className="board">
                 <InBoardCard
-                    cardClass={`center-card ${centerCardAtt.color}-card`}
-                    imgClass={`in-card-${centerCardAtt.img}`}
-                    imgSrc={centerCardAtt.imgSrc}
-                    cardContent={centerCardAtt.content}
-                    center={true}
-                    clickFunc={() => 
-                        setCenterCardAtt(prevValues=>{
-                            return {
-                                ...prevValues,
-                                show:false
-                            }
-                        })
-                    }
+                    cardClass="up-cards"
+                    clickFunc={()=>{
+                        handleCard(0);
+                    }}
+                    imgClass="imgs"
+                    imgSrc={imgSrcs[0]}
                 />
-            )}
-        </div>
+                <InBoardCard
+                    cardClass="right-cards"
+                    clickFunc={()=>{
+                        handleCard(1);
+                    }}
+                    imgClass="imgs"
+                    imgSrc={imgSrcs[1]}
+                />
+                <InBoardCard
+                    cardClass="down-cards"
+                    clickFunc={()=>{
+                        handleCard(2);
+                    }}
+                    imgClass="imgs"
+                    imgSrc={imgSrcs[2]}
+                />
+                <InBoardCard
+                    cardClass="left-cards"
+                    clickFunc={()=>{
+                        handleCard(3);
+                    }}
+                    imgClass="imgs"
+                    imgSrc={imgSrcs[3]}
+                />
+                {/*Here goes the card displayed in center*/}
+                {centerCardAtt.show && (
+                    <InBoardCard
+                        cardClass={`center-card ${centerCardAtt.color}-card`}
+                        imgClass={`in-card-${centerCardAtt.img}`}
+                        imgSrc={centerCardAtt.imgSrc}
+                        cardContent={centerCardAtt.content}
+                        center={true}
+                        clickFunc={() => 
+                            setCenterCardAtt(prevValues=>{
+                                return {
+                                    ...prevValues,
+                                    show:false
+                                }
+                            })
+                        }
+                    />
+                )}
+            </Grid>
+        </Grid>
+        
     );
 }//Board
 

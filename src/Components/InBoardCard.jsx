@@ -1,9 +1,4 @@
 import React from 'react';
-import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import Fab from "@material-ui/core/Fab";
-import { IconButton } from '@material-ui/core';
-import CancelIcon from '@material-ui/icons/Cancel';
-import CloseIcon from '@material-ui/icons/Close';
 
 export default function InBoardCard(props){
     
@@ -19,14 +14,12 @@ export default function InBoardCard(props){
             onClick={!center && clickFunc}
         >
             {center && (
-                <Fab
-                    className="close-fab"
-                    aria-label="close"
+                <div
+                    className="close-div"
+                    onClick={clickFunc}
                 >
-                    <CloseIcon 
-                        onClick={clickFunc}
-                    />
-                </Fab>
+                    x
+                </div>
             )}
             <img
                 class={imgClass}
