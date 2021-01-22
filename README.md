@@ -1,3 +1,9 @@
+# What is it
+This could be the board of a truth/dare game.
+
+# First instructions
+Clone it and run npm install to get the dependencies. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
