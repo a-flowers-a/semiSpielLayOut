@@ -72,8 +72,10 @@ height: 28px;
 }
 
 .left-cards{
+    align-items: center;
     background-color: #010101;/*ff7c7c 110133*/
     box-shadow: 0 2px 7px #f6f6f6;/*eeeded*/
+    display: flex;
     height: 400px;
     margin-top: -500px;
     width: 40px;
@@ -84,8 +86,10 @@ height: 28px;
 }
 
 .right-cards{
+    align-items: center;
     background-color: #010101;/* fe346e aaaaaa ffd082*/
     box-shadow: 0 2px 7px #eeeded;
+    display: flex;
     height: 400px;
     margin-left: 310px;
     margin-top: 60px;
