@@ -1,8 +1,23 @@
 # What is it
-This could be the board of a truth/dare game.
+Layout for a truth/dare game board.
+
+# Board
+<img width="352" alt="board" src="https://user-images.githubusercontent.com/53799991/117040249-50477480-accf-11eb-9067-f5efb3a46036.png">
+
+# Question card
+<img width="351" alt="question" src="https://user-images.githubusercontent.com/53799991/117040254-52113800-accf-11eb-8457-062e3ab59ac1.png">
+
+# Duel card
+<img width="350" alt="dontBuyIt" src="https://user-images.githubusercontent.com/53799991/117040260-53426500-accf-11eb-810f-bbf6f8309e48.png">
+
+# Not answering card
+<img width="354" alt="silence" src="https://user-images.githubusercontent.com/53799991/117040263-54739200-accf-11eb-8b59-4d5c3901d3bb.png">
+
+# Depends on card
+<img width="354" alt="dependsOn" src="https://user-images.githubusercontent.com/53799991/117040269-55a4bf00-accf-11eb-9a26-afa033974832.png">
 
 # First instructions
-Clone it and run npm install to get the dependencies. 
+Clone and run npm install to get the dependencies, then run npm start.
 
 # Getting Started with Create React App
 
